@@ -31,3 +31,15 @@ for( var i = 0, j = 5; i  <= 5; i++, j-- ){
  }else{
    alert("[キャンセル]ですね、キャンセルのキャンセルをキャンセルだから・・・");
  }
+
+switch(x){
+  case "A":
+  case "B":
+  case "C":
+
+  break;
+  case "D":
+  break;
+  default:
+  break;
+}
