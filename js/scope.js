@@ -21,25 +21,36 @@ console.log( array[1] );
 
 a=1,b=1,c=1
 
-for( var i = 0, j = 5; i  <= 5; i++, j-- ){
-  console.log(" i: " + " j: " + j );
+// for( var i = 0, j = 5; i  <= 5; i++, j-- ){
+//   console.log(" i: " + " j: " + j );
+// }
+//  var msg = "キャンセルをキャンセルしても良いですか？";
+//
+//  if(confirm(msg)){
+//    alert("[OK]ですね、ではキャンセルしま・・・せん、で合ってますか？");
+//  }else{
+//    alert("[キャンセル]ですね、キャンセルのキャンセルをキャンセルだから・・・");
+//  }
+
+for ( var i=0; i<5; i++ ){
+  console.log( i );
 }
- var msg = "キャンセルをキャンセルしても良いですか？";
 
- if(confirm(msg)){
-   alert("[OK]ですね、ではキャンセルしま・・・せん、で合ってますか？");
- }else{
-   alert("[キャンセル]ですね、キャンセルのキャンセルをキャンセルだから・・・");
- }
-
-switch(x){
-  case "A":
-  case "B":
-  case "C":
-
-  break;
-  case "D":
-  break;
-  default:
-  break;
+for( var i = 1; i <= 10; i++ ){
+  if(( i % 2 ) == 0 ){
+    console.log( "偶数:" + i );
+  }else{
+    console.log( "奇数:" + i );
+  }
 }
+
+var tbox = document.getElementsByClassName( "tbox" );
+var btn = document.getElementById( "btn-submit" );
+
+btn.addEventListener( 'click',function(){
+  for( var i = 0; i < tbox.length; i++ ){
+    if(!tbox[i].value){
+      alert( ( i + 1 ) + "個目のテキストボックスに入力してください" );
+    }
+  }
+});
