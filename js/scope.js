@@ -1,4 +1,4 @@
-var x = 0;
+let x = 0;
 
 function func(){
   //console.log( "関数内で参照(宣言前):" + x );
@@ -21,10 +21,10 @@ console.log( array[1] );
 
 a=1,b=1,c=1
 
-// for( var i = 0, j = 5; i  <= 5; i++, j-- ){
+// for( let i = 0, j = 5; i  <= 5; i++, j-- ){
 //   console.log(" i: " + " j: " + j );
 // }
-//  var msg = "キャンセルをキャンセルしても良いですか？";
+//  let msg = "キャンセルをキャンセルしても良いですか？";
 //
 //  if(confirm(msg)){
 //    alert("[OK]ですね、ではキャンセルしま・・・せん、で合ってますか？");
@@ -32,11 +32,11 @@ a=1,b=1,c=1
 //    alert("[キャンセル]ですね、キャンセルのキャンセルをキャンセルだから・・・");
 //  }
 
-for ( var i=0; i<5; i++ ){
+for ( let i=0; i<5; i++ ){
   console.log( i );
 }
 
-for( var i = 1; i <= 10; i++ ){
+for( let i = 1; i <= 10; i++ ){
   if(( i % 2 ) == 0 ){
     console.log( "偶数:" + i );
   }else{
@@ -44,11 +44,11 @@ for( var i = 1; i <= 10; i++ ){
   }
 }
 
-var tbox = document.getElementsByClassName( "tbox" );
-var btn = document.getElementById( "btn-submit" );
+let tbox = document.getElementsByClassName( "tbox" );
+let btn = document.getElementById( "btn-submit" );
 
 btn.addEventListener( 'click',function(){
-  for( var i = 0; i < tbox.length; i++ ){
+  for( let i = 0; i < tbox.length; i++ ){
     if(!tbox[i].value){
       alert( ( i + 1 ) + "個目のテキストボックスに入力してください" );
     }
