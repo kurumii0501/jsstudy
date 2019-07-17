@@ -21,10 +21,10 @@ console.log( array[1] );
 
 a=1,b=1,c=1
 
-// for( var i = 0, j = 5; i  <= 5; i++, j-- ){
+// for( let i = 0, j = 5; i  <= 5; i++, j-- ){
 //   console.log(" i: " + " j: " + j );
 // }
-//  var msg = "キャンセルをキャンセルしても良いですか？";
+//  let msg = "キャンセルをキャンセルしても良いですか？";
 //
 //  if(confirm(msg)){
 //    alert("[OK]ですね、ではキャンセルしま・・・せん、で合ってますか？");

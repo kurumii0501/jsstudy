@@ -1,5 +1,6 @@
 var br = "\n";
 var v = prompt( "変換したいメガバイトを入力してください(数値のみ)" );
+const leng = "バイト";
 
 alert(
   v + "MBを変換" + br +
