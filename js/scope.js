@@ -64,8 +64,14 @@ btn.addEventListener( 'click',function(){
 //   }
 // console.log( num + "の約数" + ret );
 
+// let i = 0;
+// do{
+//   i++;
+//   console.log( i );
+// }while( i<5 );
+
 let i = 0;
-do{
+do {
   i++;
   console.log( i );
-}while( i<5 );
+}while( i < 5 );
