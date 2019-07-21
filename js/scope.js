@@ -8,18 +8,18 @@ function func(){
 
 func();
 console.log( "関数外で参照:" + x );
+//
+// let obj = {
+//   name : "エーミール・シンクレール",
+//   age :  10,
+// };
+//
+// console.log( obj.name );
 
-let obj = {
-  name : "エーミール・シンクレール",
-  age :  10,
-};
-
-console.log( obj.name );
-
-let array = [1, 2, 3];
-console.log( array[1] );
-
-a=1,b=1,c=1
+// let array = [1, 2, 3];
+// console.log( array[1] );
+//
+// a=1,b=1,c=1
 
 // for( var i = 0, j = 5; i  <= 5; i++, j-- ){
 //   console.log(" i: " + " j: " + j );
@@ -70,8 +70,51 @@ btn.addEventListener( 'click',function(){
 //   console.log( i );
 // }while( i<5 );
 
-let i = 0;
-do {
-  i++;
+// let i = 0;
+// do {
+//   i++;
+//   console.log( i );
+// }while( i < 5 );
+//
+// let obj = {a:"A",b:"B",c:"C"};
+//
+// for( let o in obj ){
+//   console.log( "obj." + o + " : " + obj[o] );
+// }
+
+let obj = ["A","B","C"];
+
+for( let i in obj ){
+  console.log( "obj." + i + " : " + obj[i] );
+}
+
+for ( let i = 0; i < 10; i++ ){
+  if( i==3 ){
+    break;
+  }
+  console.log(i);
+}
+
+for ( let i =0; i <5; i++ ){
+  if( i == 3 ){
+    continue;
+  }
   console.log( i );
-}while( i < 5 );
+}
+
+let a = 5, b = 10;
+with( Math ){
+  console.log("最小:" + min(a,b));
+  console.log("最小:" + max(a,b));
+}
+
+// let list = ["A", "B", "C"];
+// console.log( list[2] );
+
+// let list = ["A","B","C"];
+// console.log( list.length );
+
+let list = ["A","B","C"];
+for( let i=0 ; i <= list.length; i++ ){
+  console.log(list[i]);
+}
