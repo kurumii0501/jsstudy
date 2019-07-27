@@ -114,7 +114,12 @@ with( Math ){
 // let list = ["A","B","C"];
 // console.log( list.length );
 
-let list = ["A","B","C"];
-for( let i=0 ; i <= list.length; i++ ){
-  console.log(list[i]);
-}
+// let list = ["A","B","C"];
+// for( let i=0 ; i <= list.length; i++ ){
+//   console.log(list[i]);
+// }
+
+let list = ["A",,"C"];
+list.forEach(function( val ){
+  console.log( " [ " + val + " ] " );
+});

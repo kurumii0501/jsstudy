@@ -3,7 +3,7 @@
 dl{
   display: flex;
   width: 250px;
-  justify-content: space-between;;
+  justify-content: space-between;
   align-items: center;
 }
 dt{
