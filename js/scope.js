@@ -124,7 +124,23 @@ with( Math ){
 //   console.log( " [ " + val + " ] " );
 // });
 
-let list = ["A","B","C"];
-let len = list.unshift( "S" );
+// let list = ["A","B","C"];
+// let len = list.unshift( "S" );
+//
+// console.log( list );
 
-console.log( list );
+// let list1 = ["A","B","C"];
+// let list2 = ["D","E","F"];
+// let list = list1.concat( list2 );
+//
+// console.log(list);
+
+// let list = ["A","B","C"];
+// console.log( list.join("-") );
+
+// let list = [ "B","C","A" ];
+// console.log( list.sort() );
+
+let list = ["A","B","C"];
+list2 = list.slice();
+console.log( list2 );
