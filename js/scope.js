@@ -119,7 +119,12 @@ with( Math ){
 //   console.log(list[i]);
 // }
 
-let list = ["A",,"C"];
-list.forEach(function( val ){
-  console.log( " [ " + val + " ] " );
-});
+// let list = ["A",,"C"];
+// list.forEach(function( val ){
+//   console.log( " [ " + val + " ] " );
+// });
+
+let list = ["A","B","C"];
+let len = list.unshift( "S" );
+
+console.log( list );
