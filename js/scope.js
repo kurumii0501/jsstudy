@@ -146,12 +146,29 @@
 //   return v * 2;
 // }
 
-function outerFunc(){
-  let x = 2;
-  return function (){
-   return x++;
-  }
-}
+// function outerFunc(){
+//   let x = 2;
+//   return function (){
+//    return x++;
+//   }
+// }
+//
+// let func = outerFunc();
+// func();
 
-let func = outerFunc();
-func();
+// function loop( x ){
+//   if( x > 20 ) return;
+//   console.log( x );
+//
+//   loop( x + 1 );
+// }
+//
+// loop( 1 );
+
+function exec( callbackFunc ){
+  callbackFunc();
+}
+let myCallback = function(){
+  document.getElementById("message").textContent = "コールバック完了";
+}
+exec( myCallback );
