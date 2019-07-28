@@ -1,13 +1,13 @@
-let x = 0;
-
-function func(){
-  //console.log( "関数内で参照(宣言前):" + x );
-  let x = 1;
-  console.log( "関数内で参照(宣言前)" + x );
-}
-
-func();
-console.log( "関数外で参照:" + x );
+// let x = 0;
+//
+// function func(){
+//   //console.log( "関数内で参照(宣言前):" + x );
+//   let x = 1;
+//   console.log( "関数内で参照(宣言前)" + x );
+// }
+//
+// func();
+// console.log( "関数外で参照:" + x );
 //
 // let obj = {
 //   name : "エーミール・シンクレール",
@@ -32,28 +32,28 @@ console.log( "関数外で参照:" + x );
 //    alert("[キャンセル]ですね、キャンセルのキャンセルをキャンセルだから・・・");
 //  }
 
-for ( let i=0; i<5; i++ ){
-  console.log( i );
-}
-
-for( let i = 1; i <= 10; i++ ){
-  if(( i % 2 ) == 0 ){
-    console.log( "偶数:" + i );
-  }else{
-    console.log( "奇数:" + i );
-  }
-}
-
-let tbox = document.getElementsByClassName( "tbox" );
-let btn = document.getElementById( "btn-submit" );
-
-btn.addEventListener( 'click',function(){
-  for( let i = 0; i < tbox.length; i++ ){
-    if(!tbox[i].value){
-      alert( ( i + 1 ) + "個目のテキストボックスに入力してください" );
-    }
-  }
-});
+// for ( let i=0; i<5; i++ ){
+//   console.log( i );
+// }
+//
+// for( let i = 1; i <= 10; i++ ){
+//   if(( i % 2 ) == 0 ){
+//     console.log( "偶数:" + i );
+//   }else{
+//     console.log( "奇数:" + i );
+//   }
+// }
+//
+// let tbox = document.getElementsByClassName( "tbox" );
+// let btn = document.getElementById( "btn-submit" );
+//
+// btn.addEventListener( 'click',function(){
+//   for( let i = 0; i < tbox.length; i++ ){
+//     if(!tbox[i].value){
+//       alert( ( i + 1 ) + "個目のテキストボックスに入力してください" );
+//     }
+//   }
+// });
 
 // let num = 200;
 // let i = 1;
@@ -81,32 +81,32 @@ btn.addEventListener( 'click',function(){
 // for( let o in obj ){
 //   console.log( "obj." + o + " : " + obj[o] );
 // }
-
-let obj = ["A","B","C"];
-
-for( let i in obj ){
-  console.log( "obj." + i + " : " + obj[i] );
-}
-
-for ( let i = 0; i < 10; i++ ){
-  if( i==3 ){
-    break;
-  }
-  console.log(i);
-}
-
-for ( let i =0; i <5; i++ ){
-  if( i == 3 ){
-    continue;
-  }
-  console.log( i );
-}
-
-let a = 5, b = 10;
-with( Math ){
-  console.log("最小:" + min(a,b));
-  console.log("最小:" + max(a,b));
-}
+//
+// let obj = ["A","B","C"];
+//
+// for( let i in obj ){
+//   console.log( "obj." + i + " : " + obj[i] );
+// }
+//
+// for ( let i = 0; i < 10; i++ ){
+//   if( i==3 ){
+//     break;
+//   }
+//   console.log(i);
+// }
+//
+// for ( let i =0; i <5; i++ ){
+//   if( i == 3 ){
+//     continue;
+//   }
+//   console.log( i );
+// }
+//
+// let a = 5, b = 10;
+// with( Math ){
+//   console.log("最小:" + min(a,b));
+//   console.log("最小:" + max(a,b));
+// }
 
 // let list = ["A", "B", "C"];
 // console.log( list[2] );
@@ -141,6 +141,17 @@ with( Math ){
 // let list = [ "B","C","A" ];
 // console.log( list.sort() );
 
-let list = ["A","B","C"];
-list2 = list.slice();
-console.log( list2 );
+// console.log( calcDoube( 10 ) );
+// function calcDoube( v ){
+//   return v * 2;
+// }
+
+function outerFunc(){
+  let x = 2;
+  return function (){
+   return x++;
+  }
+}
+
+let func = outerFunc();
+func();
